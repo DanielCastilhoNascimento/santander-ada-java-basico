@@ -45,7 +45,7 @@ public class StringsDatas {
         } else if(horaAtual >= 18 && horaAtual < 24){
             saudacao = "Boa noite!";
         }
-        System.out.println("--------------------------------------------------------------");
+        System.out.println("-------------------------------------------------------------------");
         System.out.printf("Olá, %s. Hoje é %s, %s%n.", nome, diaSemana, saudacao.toUpperCase());
 
     }
