@@ -3,6 +3,7 @@ package Animais;
 public class Cachorro {
 
     //atributos
+    static int numeroDeCachorros; //Atributo static é global. Serve para todos os objetos.
     private String nome;
     private String cor;
     private int altura;
@@ -23,6 +24,8 @@ public class Cachorro {
         this.peso = peso;
         this.tamanhoDoRabo = tamanhoDoRabo;
         this.estadoDeEspirito = estadoDeEspirito;
+
+        numeroDeCachorros ++;
     }
 
     //métodos
@@ -85,9 +88,12 @@ public class Cachorro {
             this.estadoDeEspirito = "Neutro";
         }
         return estadoDeEspirito;
-
-
     }
-    
+
+    @Override
+    public String toString() {
+        //Restringindo o campo como único. Não
+        return "Cachorro [nome=" + nome + "]";
+    }    
 
 }

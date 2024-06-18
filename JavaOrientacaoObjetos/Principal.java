@@ -10,8 +10,13 @@ public class Principal {
         Gato gato1 = new Gato("Takashi","Preto e Branco",18,4,20,"nada");
 
 
-        System.out.println(cachorro1);  //imprime tipo e endereço da memória.
-        System.out.println(cachorro2);
+        System.out.println(cachorro1.toString());
+        System.out.println(cachorro2.toString());
+
+        System.out.println("-------------------");
+
+        System.out.println(cachorro1.getNumeroDeCachorros());
+        System.out.println(cachorro2.getNumeroDeCachorros()); //Mostra quantos cachorros foram criados na classe. Tanto faz ser cachorro1 ou 2.
 
         //testando objetos com os contrutores
         System.out.println("-------------------");
